@@ -1,4 +1,3 @@
-```markdown
 # FinAI — Experiência Digital de Relacionamento Financeiro com IA Generativa
 
 Este repositório contém a solução desenvolvida para o desafio de criar um assistente financeiro inteligente, integrando **Inteligência Artificial Generativa (Ollama)**, **Python (Pandas)** e **UX (Streamlit)**. 
