@@ -46,6 +46,7 @@ No vídeo, a tela do protótipo desenvolvido em **Streamlit** é exibida demonst
 
 ## Link do Vídeo
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
+> Link do seu pitch no YouTube
 
-[[https://www.youtube.com/watch?v=dQw4w9WgXcQ](https://youtu.be/ghK1t2fYlbE)]([https://www.youtube.com/watch?v=dQw4w9WgXcQ](https://youtu.be/ghK1t2fYlbE))
+[https://youtu.be/ghK1t2fYlbE](https://youtu.be/ghK1t2fYlbE)
+
