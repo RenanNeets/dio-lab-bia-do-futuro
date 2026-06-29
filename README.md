@@ -15,7 +15,7 @@ flowchart TD
     A[Cliente / Interface Streamlit] -->|Pergunta em Linguagem Natural| B[Camada Intermediária Python]
     B -->|Lê e Processa via Pandas| C[Bases de Dados /data]
     C -->|Retorna Dados Consolidados| B
-    B -->|Injeta Contexto Dinâmico| D[Ollama: cgpt-oss]
+    B -->|Injeta Contexto Dinâmico| D[Ollama: llama3.1]
     D -->|Gera Resposta Segura e Educativa| B
     B -->|Exibe a Resposta no Chat| A
 
@@ -26,7 +26,7 @@ flowchart TD
 * **Interface (Streamlit):** Chatbot responsivo e interativo com persistência de contexto em memória de sessão (`st.session_state`).
 * **Engine de Dados (Pandas):** Carrega e cruza os dados do cliente, isolando a LLM de erros de cálculo.
 * **Orquestração de Prompts:** Injeção dinâmica de contexto de segurança, travas de *suitability* (perfil de risco) e tratamento de *edge cases* (perguntas fora de escopo).
-* **LLM Local:** Integração nativa via API com o **Ollama** utilizando o modelo customizado `cgpt-oss`.
+* **LLM Local:** Integração nativa via API com o **Ollama** utilizando o modelo customizado `llama3.1`.
 
 ---
 
@@ -35,7 +35,6 @@ flowchart TD
 ```text
 dio-lab-bia-do-futuro/
 ├── run.py                 # Script de automação (instala dependências e roda o app)
-├── Modelfile              # Arquivo de configuração e criação do modelo no Ollama
 ├── data/                  # Base de Conhecimento (Arquivos do laboratório)
 │   ├── transacoes.csv
 │   ├── historico_atendimento.csv
@@ -60,12 +59,7 @@ dio-lab-bia-do-futuro/
 
 ### 1. Configurando o Modelo customizado no Ollama
 
-Para garantir que o modelo `cgpt-oss` use as diretrizes de comportamento do FinAI, crie um arquivo chamado `Modelfile` na raiz do projeto com o seu prompt de sistema e execute o comando abaixo para compilar o modelo localmente:
-
-```bash
-ollama create cgpt-oss -f ./Modelfile
-
-```
+Garanta que o modelo `llama3.1` está sendo usado no Ollama local, por que ele é usado nas diretrizes de comportamento do FinAI.
 
 ### 2. Execução Automatizada da Aplicação
 
